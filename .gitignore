@@ -1,0 +1,8 @@
+# QA / dev-only scripts (validation, screenshot, legacy) — not part of the deployed site
+scripts/
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log

@@ -1,0 +1,2 @@
+# QA / dev-only scripts — exclude from the static deployment
+scripts/
