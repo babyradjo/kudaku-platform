@@ -92,11 +92,15 @@
 
   function renderPrograms(el) {
     el.innerHTML = C.programs.map(function (p) {
+      var sub = p.id ? '<span class="program-subtitle">' + p.id + "</span>" : "";
+      var concept = p.concept ? '<p class="program-concept">' + p.concept + "</p>" : "";
       return (
         '<article class="program-card" data-reveal>' +
           '<span class="program-index">' + p.n + "</span>" +
           '<h3 class="program-name">' + p.name + "</h3>" +
+          sub +
           '<p class="program-text">' + p.text + "</p>" +
+          concept +
         "</article>"
       );
     }).join("");
@@ -104,6 +108,12 @@
 
   function renderDays(el) {
     el.innerHTML = C.days.map(function (d, i) {
+      var moments = d.moments && d.moments.length
+        ? '<div class="day-moments-wrap">' +
+            '<span class="day-moments-label">Signature moments</span>' +
+            '<ul class="day-moments">' + d.moments.map(function (m) { return "<li>" + m + "</li>"; }).join("") + "</ul>" +
+          "</div>"
+        : "";
       return (
         '<article class="day-block" data-reveal>' +
           '<div class="day-media">' +
@@ -113,7 +123,9 @@
             '<span class="day-kicker">' + d.day + "</span>" +
             '<h3 class="day-name">' + d.name + "</h3>" +
             '<span class="day-gloss">' + d.gloss + "</span>" +
+            '<span class="day-subtitle">' + d.subtitle + "</span>" +
             '<p class="day-text">' + d.text + "</p>" +
+            moments +
           "</div>" +
         "</article>"
       );
@@ -152,6 +164,18 @@
           '<span class="growth-stage">' + g.stage + "</span>" +
           '<span class="growth-note">' + g.note + "</span>" +
         "</li>"
+      );
+    }).join("");
+  }
+
+  function renderLifecycle(el) {
+    el.innerHTML = C.lifecycle.phases.map(function (p) {
+      return (
+        '<div class="lifecycle-phase" data-reveal>' +
+          '<span class="lifecycle-dot"></span>' +
+          '<h3 class="lifecycle-phase-name">' + p.phase + "</h3>" +
+          '<p class="lifecycle-phase-text">' + p.note + "</p>" +
+        "</div>"
       );
     }).join("");
   }
@@ -219,6 +243,7 @@
       else if (kind === "impact") renderImpact(el);
       else if (kind === "partners") renderPartners(el);
       else if (kind === "growth") renderGrowth(el);
+      else if (kind === "lifecycle") renderLifecycle(el);
       else if (kind === "principle") renderPrinciple(el);
     });
 

@@ -6,3 +6,5 @@ scripts/
 Thumbs.db
 desktop.ini
 *.log
+
+.vercel

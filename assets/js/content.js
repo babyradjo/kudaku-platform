@@ -44,17 +44,17 @@ window.KUDAKU_CONTENT = (function () {
 
   /* Ecosystem — the program modules. */
   var programs = [
-    { n: "01", name: "KUDAKU Table", text: "Curated dining encounters where a single dish opens a conversation about place, people, and history." },
-    { n: "02", name: "KUDAKU Kitchen", text: "The living kitchen — traditional technique, live craft, and the hands that transform raw ingredients into shared meaning." },
-    { n: "03", name: "KUDAKU Market", text: "Producers and ingredients in direct dialogue — the local economy made visible, and made tasteable." },
-    { n: "04", name: "KUDAKU Farm", text: "Seed, soil, and food systems — agriculture understood as the first act of culture." },
-    { n: "05", name: "KUDAKU Lab", text: "Research and experiment — food studies, ecology, and the questions that sit behind the plate." },
-    { n: "06", name: "KUDAKU Class", text: "Learning and transmission — workshops that carry technique and knowledge across generations." },
-    { n: "07", name: "KUDAKU Talk", text: "Dialogue and narrative — conversations on food as culture, economy, and ecology." },
-    { n: "08", name: "KUDAKU Stage", text: "Performance and ritual — music, movement, and ceremony gathered around food." },
-    { n: "09", name: "KUDAKU Archive", text: "Documentation and memory — recipes, stories, and knowledge preserved as a living legacy." },
-    { n: "10", name: "KUDAKU Residency", text: "Residencies for chefs, artists, and researchers — deep, unhurried work in a living landscape." },
-    { n: "11", name: "Food Diplomacy", text: "Cross-cultural exchange — food as a shared language between regions, nations, and worlds." }
+    { n: "01", name: "KUDAKU Table", id: "Perjamuan Budaya", concept: "One Table. Many Cultures. One Earth.", text: "Communal dining that gathers farmers, chefs, village communities, artists, national guests and international guests around one shared table." },
+    { n: "02", name: "KUDAKU Kitchen", id: "Dapur Pengalaman", text: "Cooking experiences, demonstrations, classes, chef collaboration, and the living transmission of traditional culinary knowledge." },
+    { n: "03", name: "KUDAKU Market", id: "Pasar Pangan & Kreativitas", text: "Farm products, culinary products, processed food, UMKM, spices, creative products, crafts, books and cultural works — in direct dialogue." },
+    { n: "04", name: "KUDAKU Farm", id: "Dari Tanah ke Dapur", text: "Seed, planting, harvesting, spices and agriculture — transforming garden produce from soil to plate." },
+    { n: "05", name: "KUDAKU Lab", id: "Laboratorium Pangan", concept: "Chef × Farmer × Researcher × Student × Designer × UMKM", text: "Product innovation, fermentation, local food, processing technology, recipe development, food waste, packaging and the creative economy." },
+    { n: "06", name: "KUDAKU Class", id: "Sekolah Pangan dan Budaya", text: "Learning and transmission for children, youth, students, communities, UMKM, teachers, farmers and tourism actors." },
+    { n: "07", name: "KUDAKU Talk", id: "Forum Pangan & Kebudayaan", text: "Dialogue on local food, food resilience, culture, agriculture, climate change, youth, the creative economy, gastronomy, tourism and the future of food." },
+    { n: "08", name: "KUDAKU Stage", id: "Seni dan Kebudayaan", text: "Music, dance, theatre, storytelling, traditional performance and contemporary work — gathered around food." },
+    { n: "09", name: "KUDAKU Archive", id: "Arsip Pangan Nusantara", concept: "Ambition: 100 Resep Dapur Kuningan → 1000 Cerita Pangan Nusantara", text: "Recipes, stories, photography, video, interviews, kitchen tools, ingredients, practitioners and food history — documented as a living legacy." },
+    { n: "10", name: "KUDAKU Residency", text: "A residence and creative program for chefs, artists, researchers, students, cultural practitioners and food practitioners — living and working at Bumi Seni Tarikolot alongside the community." },
+    { n: "11", name: "Food Diplomacy", concept: "Food is one of the most universal ways for people to meet.", text: "Food as cultural diplomacy — chef exchange, cultural dinners, cooking collaborations, residencies, food research, cultural dialogue and creative collaboration. A future exchange architecture between Indonesia and Japan, Korea, India, Thailand, Malaysia, Australia, and beyond." }
   ];
 
   /* KUDAKU Nusantara — the annual flagship, three days. */
@@ -63,32 +63,37 @@ window.KUDAKU_CONTENT = (function () {
       day: "Day 1",
       name: "AKAR",
       gloss: "Root",
-      text: "Where food begins: seeds, soil, ingredients, and the inherited knowledge that gives a dish its origin. A day of return to the source of taste."
+      subtitle: "Tanah, Pangan & Identitas",
+      text: "Understanding where food comes from — and the people behind it. A day of return to the source of taste.",
+      moments: ["Dari Tanah ke Meja", "KUDAKU Farm Experience", "KUDAKU Archive: Cerita dari Dapur Nenek", "Pasar Pangan & Kreativitas", "Jamuan Nusantara", "Malam Budaya Nusantara"]
     },
     {
       day: "Day 2",
       name: "PERTEMUAN",
       gloss: "Encounter",
-      text: "Where food gathers people: shared tables, exchange between regions, and the conversations that only happen around a common meal."
+      subtitle: "Indonesia Bertemu",
+      text: "Bringing together regions, traditions, people and knowledge around one shared table.",
+      moments: ["Sarapan Nusantara", "Pangan sebagai Identitas", "Dapur Nusantara", "KUDAKU Lab: Tradisi Bertemu Kreativitas", "KUDAKU Young Talent", "Parade Pangan Nusantara", "The Great Nusantara Dinner", "Nusantara Night"]
     },
     {
       day: "Day 3",
       name: "MASA DEPAN",
       gloss: "Future",
-      text: "Where food looks forward: young makers, sustainable systems, and the imagination of what Indonesian food can become."
+      subtitle: "Kreativitas, Ketahanan & Dunia",
+      text: "From inherited knowledge toward the future of food — creativity, resilience, and the world.",
+      moments: ["Future Food Forum", "Food as Cultural Diplomacy", "One Table — Many Cultures", "KUDAKU CREATE / Food Lab Final", "Future Market", "KUDAKU Legacy Session", "KUDAKU Awards"]
     }
   ];
 
   /* Impact & Legacy — the pillars of long-term value. */
   var impact = [
-    { title: "Culture", text: "Keeping living food traditions in practice — not preserved behind glass, but performed, tasted, and carried forward." },
-    { title: "Education", text: "Turning the table into a classroom: technique, food literacy, and ecological understanding for the next generation." },
-    { title: "Local economy", text: "Directing value to producers, growers, and makers — so that a thriving food culture also means thriving livelihoods." },
-    { title: "Agriculture & food systems", text: "Supporting seed, soil, and regenerative practice as the foundation beneath every plate." },
-    { title: "Ecology", text: "Treating land and water as participants, not resources — food as a relationship with place." },
-    { title: "Community", text: "Building the shared tables and recurring gatherings where belonging is felt and reinforced." },
-    { title: "International cultural exchange", text: "Opening Indonesian food culture to the world, and the world's food culture to Indonesia." },
-    { title: "Annual archive & knowledge legacy", text: "Documenting recipes, narratives, and practices each year into an archive that outlives any single event." }
+    { title: "Culture", text: "Knowledge and recipes documented — living food traditions recorded and carried forward." },
+    { title: "Education", text: "Learning participants and young people involved — the table as a classroom for the next generation." },
+    { title: "Economy", text: "Economic value and benefits received by local actors — producers, growers, and makers." },
+    { title: "Network", text: "Villages, regions, institutions and countries connected through food." },
+    { title: "Creativity", text: "New works, products and collaborations born from the platform." },
+    { title: "Ecology", text: "Waste reduction, local food use and environmentally responsible practice." },
+    { title: "Legacy", text: "Knowledge, documentation, programs and collaborations that continue after the flagship event." }
   ];
 
   /* Partners — the ecosystem of collaborators. */
@@ -98,7 +103,8 @@ window.KUDAKU_CONTENT = (function () {
     { title: "Business", text: "Purpose-aligned enterprises that extend reach without extracting from culture." },
     { title: "Community", text: "Producers, practitioners, and local groups who carry the culture every day." },
     { title: "Media", text: "Storytellers who bring the work to wider publics with care and context." },
-    { title: "Cultural & international institutions", text: "Peers abroad and at home who open doors for exchange and shared learning." }
+    { title: "Cultural institutions", text: "Peers at home who open doors for exchange and shared learning." },
+    { title: "International organizations", text: "Global networks that connect Indonesian food culture to the world." }
   ];
 
   /* Growth path — the ambition, not a promise of scale. */
@@ -108,6 +114,17 @@ window.KUDAKU_CONTENT = (function () {
     { stage: "Nusantara", note: "The archipelago as one shared table of islands, ingredients, and peoples." },
     { stage: "International", note: "Indonesia's food culture in dialogue with the world." }
   ];
+
+  /* Year-round lifecycle — the platform works beyond the event. */
+  var lifecycle = {
+    statementId: "Event berlangsung beberapa hari, tetapi platform KUDAKU bekerja sepanjang tahun.",
+    statementEn: "The event lasts a few days, but the KUDAKU platform works all year round.",
+    phases: [
+      { phase: "Pre-event", note: "Research, participant curation, education programs, residency, content production, promotion, and collaboration." },
+      { phase: "Flagship event", note: "KUDAKU Nusantara — the annual gathering where the whole ecosystem comes to the table." },
+      { phase: "Post-event", note: "Documentation, evaluation, publication, product development, collaboration follow-up, and legacy building." }
+    ]
+  };
 
   return {
     lang: "en",
@@ -119,6 +136,7 @@ window.KUDAKU_CONTENT = (function () {
     impact: impact,
     partners: partners,
     growth: growth,
+    lifecycle: lifecycle,
     footer: {
       initiatedLabel: "Initiated by",
       principle: "Born in Kuningan. Rooted in Nusantara. Open to the World.",

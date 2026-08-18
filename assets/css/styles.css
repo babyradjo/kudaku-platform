@@ -598,3 +598,73 @@ body.nav-locked { overflow: hidden; }
   color: var(--bark);
   max-width: 58rem;
 }
+
+/* ---------------------------- Canon additions (V0.2) ---------------------------- */
+.program-subtitle {
+  display: block;
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 0.98rem;
+  color: var(--clay);
+  margin-top: 0.4rem;
+}
+.program-concept {
+  margin-top: 1.1rem;
+  padding-top: 0.9rem;
+  border-top: 1px solid var(--line);
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 0.95rem;
+  line-height: 1.45;
+  color: var(--ink-soft);
+}
+
+.day-subtitle {
+  display: block;
+  font-family: var(--font-serif);
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 1.3;
+  color: var(--ink);
+  margin-top: 0.6rem;
+}
+.day-moments-wrap { margin-top: 1.5rem; }
+.day-moments-label {
+  display: block;
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--bark);
+  margin-bottom: 0.7rem;
+}
+.day-moments { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.day-moments li {
+  font-size: 0.82rem;
+  line-height: 1.4;
+  color: var(--ink-soft);
+  background: var(--paper-2);
+  border: 1px solid var(--line);
+  padding: 0.35rem 0.7rem;
+}
+
+.lifecycle {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: var(--line);
+  border: 1px solid var(--line);
+}
+.lifecycle-phase {
+  background: var(--paper);
+  padding: clamp(1.6rem, 3vw, 2.4rem);
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+.lifecycle-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--clay); }
+.lifecycle-phase-name { font-family: var(--font-serif); font-size: 1.35rem; font-weight: 500; }
+.lifecycle-phase-text { font-size: 0.92rem; line-height: 1.62; color: var(--bark); }
+
+@media (max-width: 640px) {
+  .lifecycle { grid-template-columns: 1fr; }
+}
