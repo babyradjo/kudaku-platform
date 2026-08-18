@@ -100,14 +100,14 @@ window.KUDAKU_CONTENT = (function () {
   var partners = [
     { title: "Government", text: "Policy, place, and public platforms that align cultural and economic development." },
     { title: "Academia", text: "Research, documentation, and the rigour that turns practice into knowledge." },
-    { title: "Business", text: "Purpose-aligned enterprises that extend reach without extracting from culture." },
+    { title: "Business", text: "Purpose-aligned enterprises that extend reach in service of culture." },
     { title: "Community", text: "Producers, practitioners, and local groups who carry the culture every day." },
     { title: "Media", text: "Storytellers who bring the work to wider publics with care and context." },
     { title: "Cultural institutions", text: "Peers at home who open doors for exchange and shared learning." },
     { title: "International organizations", text: "Global networks that connect Indonesian food culture to the world." }
   ];
 
-  /* Growth path — the ambition, not a promise of scale. */
+  /* Growth path — an ambition to widen the table, stage by stage. */
   var growth = [
     { stage: "Kuningan", note: "Where KUDAKU is born — at Bumi Seni Tarikolot, at the foot of Mount Ciremai." },
     { stage: "Jawa Barat", note: "The province as a living region of producers, kitchens, and traditions." },
@@ -140,7 +140,7 @@ window.KUDAKU_CONTENT = (function () {
     footer: {
       initiatedLabel: "Initiated by",
       principle: "Born in Kuningan. Rooted in Nusantara. Open to the World.",
-      note: "A cultural food platform. Not an event, a festival, or a single place — a shared table that keeps growing."
+      note: "A cultural food platform — a shared table that keeps growing across Nusantara."
     }
   };
 })();
