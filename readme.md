@@ -103,3 +103,9 @@ The brief references two source documents — the **KUDAKU Proposal Program** an
 ## Deployment
 
 This is an AutoClaw-managed **function-compute (nginx)** static delivery. `entryFile` is `index.html`. The zip root must contain `nginx.conf` + `index.html` (see `nginx.conf`). Formal publication is performed by the user in the platform UI.
+
+---
+
+## V0.2 update (2026-08-19)
+
+Aligned with the official KUDAKU canon: 7 impact indicators, 7 partner categories, verified Bumi Seni Tarikolot contact route, and Vercel production deployment at https://kudaku-platform.vercel.app.
