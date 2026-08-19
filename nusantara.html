@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<script>(function(){var d=document.documentElement;d.classList.add("app-loading");var k="kudaku-lang",m=location.search.match(/[?&]lang=(id|en)/),l;try{l=(m&&m[1])||localStorage.getItem(k)||"id";}catch(e){l=(m&&m[1])||"id";}if(l!=="en")l="id";d.lang=l;d.setAttribute("data-lang",l);window.setTimeout(function(){d.classList.remove("app-loading");d.classList.add("app-ready");},1500);})();</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>KUDAKU Nusantara — KUDAKU · Kuningan Dapur Kuliner</title>
 <meta name="description" content="KUDAKU Nusantara is the annual flagship gathering of the KUDAKU platform — three days, from root (Akar) to encounter (Pertemuan) to future (Masa Depan).">
@@ -19,9 +20,9 @@
     <div class="page-hero-bg" style="background-image:url('assets/img/bst/bst-dialogue-stage-forest-pavilion.webp')"></div>
     <div class="page-hero-scrim"></div>
     <div class="page-hero-inner">
-      <p class="hero-eyebrow">KUDAKU Nusantara</p>
-      <h1 class="display">The annual flagship.</h1>
-      <p class="lead">One gathering each year, three days long — where the whole ecosystem comes to the table.</p>
+      <p class="hero-eyebrow" data-i18n="heroEyebrow">KUDAKU Nusantara</p>
+      <h1 class="display" data-i18n="heroTitle">The annual flagship.</h1>
+      <p class="lead" data-i18n="heroLead">One gathering each year, three days long — where the whole ecosystem comes to the table.</p>
     </div>
   </section>
 
@@ -29,9 +30,9 @@
   <section class="section section--paper">
     <div class="container">
       <div class="section-head" data-reveal>
-        <span class="kicker">The annual flagship</span>
-        <h2 class="display">KUDAKU Nusantara is the annual gathering where KUDAKU's year-round ecosystem comes together.</h2>
-        <p class="lead">The event concentrates the ecosystem into three days of intensity. KUDAKU lives year-round through its programs, partnerships, and archive. The flagship gathers it; the platform sustains it.</p>
+        <span class="kicker" data-i18n="introKicker">The annual flagship</span>
+        <h2 class="display" data-i18n="introTitle">KUDAKU Nusantara is the annual gathering where KUDAKU's year-round ecosystem comes together.</h2>
+        <p class="lead" data-i18n="introLead">The event concentrates the ecosystem into three days of intensity. KUDAKU lives year-round through its programs, partnerships, and archive. The flagship gathers it; the platform sustains it.</p>
       </div>
     </div>
   </section>
@@ -40,23 +41,23 @@
   <section class="section section--paper2">
     <div class="container">
       <div class="section-head" data-reveal>
-        <span class="kicker">The three-day structure</span>
-        <h2 class="display">From root, to encounter, to future.</h2>
-        <p class="lead">Three days, each with its own question — and its own signature moments.</p>
+        <span class="kicker" data-i18n="daysKicker">The three-day structure</span>
+        <h2 class="display" data-i18n="daysTitle">From root, to encounter, to future.</h2>
+        <p class="lead" data-i18n="daysLead">Three days, each with its own question — and its own signature moments.</p>
       </div>
       <div class="days" data-render="days"></div>
-      <p class="contact-note" data-reveal style="margin-top:2rem">The moments above are selected highlights from the official rundown. Dates, venue, and the full timetable will be announced with the official KUDAKU Nusantara calendar.</p>
+      <p class="contact-note" data-reveal style="margin-top:2rem" data-i18n="daysNote">The moments above are selected highlights from the official rundown. Dates, venue, and the full timetable will be announced with the official KUDAKU Nusantara calendar.</p>
     </div>
   </section>
 
   <!-- CTA -->
   <section class="section cta-band">
     <div class="container">
-      <h2 class="display" data-reveal>Before the flagship, there is the platform.</h2>
-      <p class="lead" data-reveal>Meet the ecosystem that makes KUDAKU Nusantara possible.</p>
+      <h2 class="display" data-reveal data-i18n="ctaTitle">Before the flagship, there is the platform.</h2>
+      <p class="lead" data-reveal data-i18n="ctaLead">Meet the ecosystem that makes KUDAKU Nusantara possible.</p>
       <div class="hero-actions" data-reveal>
-        <a class="btn btn--clay" href="ecosystem.html">Explore the ecosystem</a>
-        <a class="btn btn--ghost" href="about.html">About KUDAKU</a>
+        <a class="btn btn--clay" href="ecosystem.html" data-i18n="ctaBtn1">Explore the ecosystem</a>
+        <a class="btn btn--ghost" href="about.html" data-i18n="ctaBtn2">About KUDAKU</a>
       </div>
     </div>
   </section>

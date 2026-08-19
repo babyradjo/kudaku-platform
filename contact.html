@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<script>(function(){var d=document.documentElement;d.classList.add("app-loading");var k="kudaku-lang",m=location.search.match(/[?&]lang=(id|en)/),l;try{l=(m&&m[1])||localStorage.getItem(k)||"id";}catch(e){l=(m&&m[1])||"id";}if(l!=="en")l="id";d.lang=l;d.setAttribute("data-lang",l);window.setTimeout(function(){d.classList.remove("app-loading");d.classList.add("app-ready");},1500);})();</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Contact — KUDAKU · Kuningan Dapur Kuliner</title>
 <meta name="description" content="Contact KUDAKU for partnership and general inquiries.">
@@ -19,45 +20,45 @@
     <div class="page-hero-bg" style="background-image:url('assets/img/bst/bst-community-workshop-small-group-discussion.webp')"></div>
     <div class="page-hero-scrim"></div>
     <div class="page-hero-inner">
-      <p class="hero-eyebrow">Contact</p>
-      <h1 class="display">Start a conversation.</h1>
-      <p class="lead">Partnership, programs, and general inquiries — one simple route to reach the table.</p>
+      <p class="hero-eyebrow" data-i18n="heroEyebrow">Contact</p>
+      <h1 class="display" data-i18n="heroTitle">Start a conversation.</h1>
+      <p class="lead" data-i18n="heroLead">Partnership, programs, and general inquiries — one simple route to reach the table.</p>
     </div>
   </section>
 
   <section class="section section--paper">
     <div class="container contact-grid">
       <div class="split-body" data-reveal>
-        <span class="kicker">Inquiries</span>
-        <h2 class="display">Write to us.</h2>
-        <p class="lead">Tell us who you are and what you have in mind. We read every message.</p>
+        <span class="kicker" data-i18n="inquiriesKicker">Inquiries</span>
+        <h2 class="display" data-i18n="inquiriesTitle">Write to us.</h2>
+        <p class="lead" data-i18n="inquiriesLead">Tell us who you are and what you have in mind. We read every message.</p>
 
         <div class="contact-block">
-          <h4>KUDAKU inquiries</h4>
-          <p>via Bumi Seni Tarikolot</p>
+          <h4 data-i18n="block1Title">KUDAKU inquiries</h4>
+          <p data-i18n="block1Sub">via Bumi Seni Tarikolot</p>
           <p><a href="mailto:bumisenitarikolot@gmail.com" style="text-decoration:underline">bumisenitarikolot@gmail.com</a></p>
         </div>
         <div class="contact-block">
-          <h4>Home</h4>
-          <p>Desa Sukamukti, Kuningan, Jawa Barat, Indonesia — at Bumi Seni Tarikolot</p>
+          <h4 data-i18n="block2Title">Home</h4>
+          <p data-i18n="block2Text">Desa Sukamukti, Kuningan, Jawa Barat, Indonesia — at Bumi Seni Tarikolot</p>
         </div>
         <div class="contact-block">
-          <h4>Note</h4>
-          <p>KUDAKU is in early development. Responses may take a few days.</p>
+          <h4 data-i18n="block3Title">Note</h4>
+          <p data-i18n="block3Text">KUDAKU is in early development. Responses may take a few days.</p>
         </div>
       </div>
 
       <form class="contact-form" action="mailto:bumisenitarikolot@gmail.com" method="post" enctype="text/plain" data-reveal>
-        <label for="name">Name</label>
+        <label for="name" data-i18n="formName">Name</label>
         <input type="text" id="name" name="name" required>
-        <label for="org">Organization</label>
+        <label for="org" data-i18n="formOrg">Organization</label>
         <input type="text" id="org" name="organization">
-        <label for="email">Email</label>
+        <label for="email" data-i18n="formEmail">Email</label>
         <input type="email" id="email" name="email" required>
-        <label for="message">Message</label>
+        <label for="message" data-i18n="formMessage">Message</label>
         <textarea id="message" name="message" required></textarea>
-        <button class="btn btn--ink" type="submit">Send inquiry</button>
-        <p class="contact-note">This opens your email client with the message prepared. No data is stored on this site.</p>
+        <button class="btn btn--ink" type="submit" data-i18n="formSubmit">Send inquiry</button>
+        <p class="contact-note" data-i18n="formNote">This opens your email client with the message prepared. No data is stored on this site.</p>
       </form>
     </div>
   </section>

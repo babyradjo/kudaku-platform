@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<script>(function(){var d=document.documentElement;d.classList.add("app-loading");var k="kudaku-lang",m=location.search.match(/[?&]lang=(id|en)/),l;try{l=(m&&m[1])||localStorage.getItem(k)||"id";}catch(e){l=(m&&m[1])||"id";}if(l!=="en")l="id";d.lang=l;d.setAttribute("data-lang",l);window.setTimeout(function(){d.classList.remove("app-loading");d.classList.add("app-ready");},1500);})();</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>KUDAKU — Kuningan Dapur Kuliner · A Cultural Food Platform</title>
 <meta name="description" content="KUDAKU is a cultural food platform initiated by Bumi Seni Tarikolot. Born in Kuningan, rooted in Nusantara, open to the world — where Indonesia meets through food.">
@@ -20,14 +21,14 @@
     <div class="hero-bg" style="background-image:url('assets/img/kudaku/kudaku-origin.webp')"></div>
     <div class="hero-scrim"></div>
     <div class="hero-inner">
-      <p class="hero-eyebrow">KUDAKU · Kuningan Dapur Kuliner</p>
-      <h1 class="display hero-title">Where Indonesia meets through <em>food</em>.</h1>
-      <p class="hero-sub">KUDAKU is a cultural food platform initiated by Bumi Seni Tarikolot — a doorway into culture, people, nature, knowledge, and the future, opened one dish at a time.</p>
+      <p class="hero-eyebrow" data-i18n="heroEyebrow">KUDAKU · Kuningan Dapur Kuliner</p>
+      <h1 class="display hero-title" data-i18n="heroTitle">Where Indonesia meets through <em>food</em>.</h1>
+      <p class="hero-sub" data-i18n="heroSub">KUDAKU is a cultural food platform initiated by Bumi Seni Tarikolot — a doorway into culture, people, nature, knowledge, and the future, opened one dish at a time.</p>
       <div class="hero-actions">
-        <a class="btn btn--clay" href="ecosystem.html">Explore the ecosystem</a>
-        <a class="btn btn--ghost" href="nusantara.html">KUDAKU Nusantara</a>
+        <a class="btn btn--clay" href="ecosystem.html" data-i18n="heroCta1">Explore the ecosystem</a>
+        <a class="btn btn--ghost" href="nusantara.html" data-i18n="heroCta2">KUDAKU Nusantara</a>
       </div>
-      <p class="hero-tagline">KUDAKU adalah tempat Indonesia bertemu melalui pangan.</p>
+      <p class="hero-tagline" data-i18n="heroTagline">KUDAKU adalah tempat Indonesia bertemu melalui pangan.</p>
     </div>
   </section>
 
@@ -35,9 +36,9 @@
   <section class="section section--paper">
     <div class="container">
       <div class="section-head section-head--center" data-reveal>
-        <span class="kicker">The idea</span>
-        <h2 class="display">Food is how a culture explains itself.</h2>
-        <p class="lead">Inside every dish is a geography, a history, a set of hands, and a way of seeing the world. KUDAKU treats food as a doorway — into the people who grow it, the land that sustains it, the knowledge that shaped it, and the future it points toward.</p>
+        <span class="kicker" data-i18n="ideaKicker">The idea</span>
+        <h2 class="display" data-i18n="ideaTitle">Food is how a culture explains itself.</h2>
+        <p class="lead" data-i18n="ideaLead">Inside every dish is a geography, a history, a set of hands, and a way of seeing the world. KUDAKU treats food as a doorway — into the people who grow it, the land that sustains it, the knowledge that shaped it, and the future it points toward.</p>
       </div>
     </div>
   </section>
@@ -46,8 +47,8 @@
   <section class="section section--paper2">
     <div class="container">
       <div class="section-head" data-reveal>
-        <span class="kicker">Experience DNA</span>
-        <h2 class="display">Five ways to enter.</h2>
+        <span class="kicker" data-i18n="dnaKicker">Experience DNA</span>
+        <h2 class="display" data-i18n="dnaTitle">Five ways to enter.</h2>
       </div>
       <ol class="dna-list" data-render="dna"></ol>
     </div>
@@ -60,12 +61,12 @@
         <img src="assets/img/kudaku/kudaku-lab.webp" alt="The KUDAKU Kitchen — a warm, natural-lit interior where raw ingredients become shared meaning" loading="lazy">
       </div>
       <div class="split-body" data-reveal>
-        <span class="kicker">The dapur</span>
-        <h2 class="display">A kitchen is a country in miniature.</h2>
-        <p class="lead">The Indonesian word <em>dapur</em> — kitchen — names the hearth where raw becomes nourishing, where knowledge passes from one generation to the next, and where a family, a village, a nation is made.</p>
-        <p>KUDAKU carries this metaphor forward. We understand the dapur as the heart of culture: a place of transformation, care, gathering, and memory — the room where Indonesia has always met itself.</p>
+        <span class="kicker" data-i18n="dapurKicker">The dapur</span>
+        <h2 class="display" data-i18n="dapurTitle">A kitchen is a country in miniature.</h2>
+        <p class="lead" data-i18n="dapurLead">The Indonesian word <em>dapur</em> — kitchen — names the hearth where raw becomes nourishing, where knowledge passes from one generation to the next, and where a family, a village, a nation is made.</p>
+        <p data-i18n="dapurText">KUDAKU carries this metaphor forward. We understand the dapur as the heart of culture: a place of transformation, care, gathering, and memory — the room where Indonesia has always met itself.</p>
         <div class="hero-actions" style="margin-top:2rem">
-          <a class="btn btn--ink" href="about.html">About KUDAKU</a>
+          <a class="btn btn--ink" href="about.html" data-i18n="dapurCta">About KUDAKU</a>
         </div>
       </div>
     </div>
@@ -75,13 +76,13 @@
   <section class="section section--dark">
     <div class="container">
       <div class="section-head" data-reveal>
-        <span class="kicker" style="color:var(--sand)">Flagship</span>
-        <h2 class="display" style="color:var(--paper)">KUDAKU Nusantara</h2>
-        <p class="lead" style="color:rgba(244,239,229,.85)">The annual gathering where the whole ecosystem comes to the table — three days, from root to future.</p>
+        <span class="kicker" style="color:var(--sand)" data-i18n="flagshipKicker">Flagship</span>
+        <h2 class="display" style="color:var(--paper)" data-i18n="flagshipTitle">KUDAKU Nusantara</h2>
+        <p class="lead" style="color:rgba(244,239,229,.85)" data-i18n="flagshipLead">The annual gathering where the whole ecosystem comes to the table — three days, from root to future.</p>
       </div>
-      <p class="module-roll" data-reveal>Day 1 — AKAR &middot; Day 2 — PERTEMUAN &middot; Day 3 — MASA DEPAN</p>
+      <p class="module-roll" data-reveal data-i18n="flagshipRoll">Day 1 — AKAR &middot; Day 2 — PERTEMUAN &middot; Day 3 — MASA DEPAN</p>
       <div class="hero-actions" style="margin-top:2.4rem" data-reveal>
-        <a class="btn btn--clay" href="nusantara.html">Meet the flagship</a>
+        <a class="btn btn--clay" href="nusantara.html" data-i18n="flagshipCta">Meet the flagship</a>
       </div>
     </div>
   </section>
@@ -90,9 +91,9 @@
   <section class="section section--paper">
     <div class="container">
       <div class="section-head" data-reveal>
-        <span class="kicker">Year-round platform</span>
-        <h2 class="display">The event lasts a few days. The platform works all year.</h2>
-        <p class="lead">"Event berlangsung beberapa hari, tetapi platform KUDAKU bekerja sepanjang tahun." KUDAKU Nusantara is the annual peak of a cycle that runs all year round.</p>
+        <span class="kicker" data-i18n="lifecycleKicker">Year-round platform</span>
+        <h2 class="display" data-i18n="lifecycleTitle">The event lasts a few days. The platform works all year.</h2>
+        <p class="lead" data-i18n="lifecycleLead">"Event berlangsung beberapa hari, tetapi platform KUDAKU bekerja sepanjang tahun." KUDAKU Nusantara is the annual peak of a cycle that runs all year round.</p>
       </div>
       <div class="lifecycle" data-render="lifecycle"></div>
     </div>
@@ -102,13 +103,13 @@
   <section class="section section--paper">
     <div class="container">
       <div class="section-head" data-reveal>
-        <span class="kicker">Ecosystem</span>
-        <h2 class="display">One platform. Eleven ways in.</h2>
-        <p class="lead">From table to farm, kitchen to archive, the KUDAKU ecosystem connects the people who grow, cook, study, perform, and remember food.</p>
+        <span class="kicker" data-i18n="ecoKicker">Ecosystem</span>
+        <h2 class="display" data-i18n="ecoTitle">One platform. Eleven ways in.</h2>
+        <p class="lead" data-i18n="ecoLead">From table to farm, kitchen to archive, the KUDAKU ecosystem connects the people who grow, cook, study, perform, and remember food.</p>
       </div>
-      <p class="module-roll" data-reveal>KUDAKU Table · KUDAKU Kitchen · KUDAKU Market · KUDAKU Farm · KUDAKU Lab · KUDAKU Class · KUDAKU Talk · KUDAKU Stage · KUDAKU Archive · KUDAKU Residency · Food Diplomacy</p>
+      <p class="module-roll" data-reveal data-i18n="ecoRoll">KUDAKU Table · KUDAKU Kitchen · KUDAKU Market · KUDAKU Farm · KUDAKU Lab · KUDAKU Class · KUDAKU Talk · KUDAKU Stage · KUDAKU Archive · KUDAKU Residency · Food Diplomacy</p>
       <div class="hero-actions" style="margin-top:2.4rem" data-reveal>
-        <a class="btn btn--ink" href="ecosystem.html">Explore the ecosystem</a>
+        <a class="btn btn--ink" href="ecosystem.html" data-i18n="ecoCta">Explore the ecosystem</a>
       </div>
     </div>
   </section>
@@ -117,11 +118,11 @@
   <section class="section section--paper2">
     <div class="container split">
       <div class="split-body" data-reveal>
-        <span class="kicker">Impact &amp; legacy</span>
-        <h2 class="display">A meal, then a memory, then a legacy.</h2>
-        <p class="lead">KUDAKU measures itself by what it leaves behind — in culture, education, local economy, ecology, and the archive of knowledge it keeps.</p>
+        <span class="kicker" data-i18n="impactKicker">Impact &amp; legacy</span>
+        <h2 class="display" data-i18n="impactTitle">A meal, then a memory, then a legacy.</h2>
+        <p class="lead" data-i18n="impactLead">KUDAKU measures itself by what it leaves behind — in culture, education, local economy, ecology, and the archive of knowledge it keeps.</p>
         <div class="hero-actions" style="margin-top:2rem">
-          <a class="btn btn--ink" href="impact.html">Impact &amp; legacy</a>
+          <a class="btn btn--ink" href="impact.html" data-i18n="impactCta">Impact &amp; legacy</a>
         </div>
       </div>
       <div class="split-media" data-reveal>
@@ -133,11 +134,11 @@
   <!-- Partnership CTA -->
   <section class="section cta-band">
     <div class="container">
-      <span class="kicker" style="color:var(--sand); justify-content:center" data-reveal>Partnership</span>
-      <h2 class="display" data-reveal>Build the table together.</h2>
-      <p class="lead" data-reveal>KUDAKU grows through a network of government, academia, business, community, media, and cultural institutions. If your work shares this table, begin the conversation.</p>
+      <span class="kicker" style="color:var(--sand); justify-content:center" data-reveal data-i18n="partnerKicker">Partnership</span>
+      <h2 class="display" data-reveal data-i18n="partnerTitle">Build the table together.</h2>
+      <p class="lead" data-reveal data-i18n="partnerLead">KUDAKU grows through a network of government, academia, business, community, media, and cultural institutions. If your work shares this table, begin the conversation.</p>
       <div class="hero-actions" data-reveal>
-        <a class="btn btn--clay" href="partners.html">Become a partner</a>
+        <a class="btn btn--clay" href="partners.html" data-i18n="partnerCta">Become a partner</a>
       </div>
     </div>
   </section>

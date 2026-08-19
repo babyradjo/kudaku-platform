@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<script>(function(){var d=document.documentElement;d.classList.add("app-loading");var k="kudaku-lang",m=location.search.match(/[?&]lang=(id|en)/),l;try{l=(m&&m[1])||localStorage.getItem(k)||"id";}catch(e){l=(m&&m[1])||"id";}if(l!=="en")l="id";d.lang=l;d.setAttribute("data-lang",l);window.setTimeout(function(){d.classList.remove("app-loading");d.classList.add("app-ready");},1500);})();</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Page not found — KUDAKU</title>
 <link rel="icon" type="image/svg+xml" href="assets/img/brand/favicon.svg">
@@ -15,11 +16,11 @@
 <main>
   <section class="section" style="min-height:80vh;display:flex;align-items:center">
     <div class="container" style="text-align:center">
-      <p class="kicker" style="justify-content:center">404</p>
-      <h1 class="display" style="font-size:clamp(2.5rem,7vw,4.5rem);margin-top:1rem">This table is not set.</h1>
-      <p class="lead" style="margin-top:1.2rem;max-width:34rem;margin-left:auto;margin-right:auto">The page you're looking for doesn't exist — or hasn't been cooked yet.</p>
+      <p class="kicker" style="justify-content:center" data-i18n="kicker">404</p>
+      <h1 class="display" style="font-size:clamp(2.5rem,7vw,4.5rem);margin-top:1rem" data-i18n="title">This table is not set.</h1>
+      <p class="lead" style="margin-top:1.2rem;max-width:34rem;margin-left:auto;margin-right:auto" data-i18n="lead">The page you're looking for doesn't exist — or hasn't been cooked yet.</p>
       <div class="hero-actions" style="justify-content:center;margin-top:2rem">
-        <a class="btn btn--ink" href="index.html">Back to KUDAKU</a>
+        <a class="btn btn--ink" href="index.html" data-i18n="btn">Back to KUDAKU</a>
       </div>
     </div>
   </section>
